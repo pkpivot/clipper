@@ -1,0 +1,8 @@
+applications:
+ - name: clipper
+   path: clipper-server/target/clipper-server-0.0.1-SNAPSHOT.jar
+   buildpacks: 
+   - https://github.com/cloudfoundry/java-buildpack
+   env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
+
